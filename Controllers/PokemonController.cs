@@ -36,13 +36,14 @@ public class PokemonController : ControllerBase
                 return NotFound($"No Pokémon found with the name {nameORid}.");
             }
 
-            // Extract the Pokémon's description (pseudo-code)
             string description = ExtractDescription(pokemonData);
            // string description = ExtractAllEnglishDescriptions(pokemonData);
+           //for debug, remove before delivery
             Console.WriteLine("pokeAPIdes:"+ description);
 
             // Translate description to Shakespearean
             string shakespeareanDescription = await ShakespeareTranslator.TranslateToShakespearean(description);
+            //for debug, remove before delivery
              Console.WriteLine("shakespeareanDescription:"+ shakespeareanDescription);
             if (shakespeareanDescription == null)
             {
@@ -85,8 +86,7 @@ public static string ExtractDescription(string json)
                     }else{
                         return "No English description available.";
                     }
-                    //dead code
-                    return description;
+
                     
                 }
             }
@@ -101,7 +101,7 @@ public static string ExtractDescription(string json)
 }
 
 
-
+/*
 public static string ExtractAllEnglishDescriptions(string json)
 {
     try
@@ -137,6 +137,6 @@ public static string ExtractAllEnglishDescriptions(string json)
 }
 
 
-
+*/
 
 }

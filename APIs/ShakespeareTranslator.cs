@@ -16,11 +16,13 @@ public class ShakespeareTranslator
         {
             var builder = new UriBuilder(TranslateUrl);
             var query = HttpUtility.ParseQueryString(builder.Query);
+            //for debug, remove before delivery
             Console.WriteLine("pokeText:"+ pokeText);
             query["text"] = pokeText;
             builder.Query = query.ToString();
 
             string url = builder.ToString();
+            //for debug, remove before delivery
             Console.WriteLine("Shakespeare url:"+ url);
             HttpResponseMessage response = await client.GetAsync(url);
 

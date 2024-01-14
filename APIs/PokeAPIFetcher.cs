@@ -14,6 +14,7 @@ public class PokeAPIFetcher
         try
         {
             string url = $"{BaseUrl}{pokemonName}";
+            //for debug, remove before delivery
             Console.WriteLine(url);
             HttpResponseMessage response = await client.GetAsync(url);
 
