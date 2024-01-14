@@ -9,7 +9,10 @@ Docker
 When writing this I expect you to already have docker,  
 but if you dont you can get it [HERE](https://docs.docker.com/desktop/install/windows-install/) (assuming you are using windows).  
 
-clone respository "https://github.com/Gatiivs/TodoApi.git"  
+clone respository
+```
+git clone https://github.com/Gatiivs/ShakesDex.git   
+```
 
 To get the project running  
 open up a terminal and go to the location of the project  
