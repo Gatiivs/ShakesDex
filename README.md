@@ -22,6 +22,10 @@ Login to docker
 ```
 docker login
 ```
+go to shakesDex
+```
+cd shakesdex
+```
 build image (here its called shakesdex but you can rename it)
 ```
 docker build -t shakesdex -f Dockerfile .
