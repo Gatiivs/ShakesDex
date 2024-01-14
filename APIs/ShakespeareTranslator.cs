@@ -32,7 +32,7 @@ public class ShakespeareTranslator
             else
             {
                 // Handle the case where the request is not successful
-                return "Error in Shakespeare translation";
+                return "Error in Shakespeare translation. Probably reached the translate limit";
             }
         }
         catch (Exception ex)
