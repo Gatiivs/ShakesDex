@@ -32,7 +32,7 @@ docker create --name core-counter shakesdex
 ```
 run container
 ```
-docker run --rm -e ASPNETCORE_ENVIRONMENT=Development -p 5090:5090 shakesdex
+docker run -p 5090:5090 shakesdex
 ```
 
 ## Usage
