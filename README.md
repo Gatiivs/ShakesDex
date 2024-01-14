@@ -19,17 +19,17 @@ Login to docker
 ```
 docker login
 ```
-build image (here its called counter image but you can rename it)
+build image (here its called shakesdex but you can rename it)
 ```
-docker build -t counter-image -f Dockerfile .
+docker build -t shakesdex -f Dockerfile .
 ```
 build container
 ```
-docker create --name core-counter counter-image
+docker create --name core-counter shakesdex
 ```
 run container
 ```
-docker run --rm -e ASPNETCORE_ENVIRONMENT=Development -p 5090:5090 counter-image
+docker run --rm -e ASPNETCORE_ENVIRONMENT=Development -p 5090:5090 shakesdex
 ```
 
 ## Usage
