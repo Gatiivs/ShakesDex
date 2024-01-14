@@ -39,7 +39,15 @@ go to http://localhost:5090/Pokemon/testing
 and then go to http://localhost:5090/swagger
 REMEMBER TO USE HTTP and NOT HTTPS
 
-
+If container doesnt work for some reason you can start the native way
+trust certificate
+```
+dotnet dev-certs https --trust
+```
+run dotnet
+```
+dotnet run --launch-profile https
+```
 
 ## License
 
