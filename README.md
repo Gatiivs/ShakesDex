@@ -16,16 +16,13 @@ git clone https://github.com/Gatiivs/ShakesDex.git
 
 To get the project running  
 open up a terminal and go to the location of the project  
-in my case its "C:\Users\Raitis\mydir\TodoApi"  
+in my case its "C:\Users\Raitis\mydir\shakesDex"  
 
 Login to docker
 ```
 docker login
 ```
-go to shakesDex
-```
-cd shakesdex
-```
+
 build image (here its called shakesdex but you can rename it)
 ```
 docker build -t shakesdex -f Dockerfile .
