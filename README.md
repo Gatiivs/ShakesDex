@@ -43,6 +43,15 @@ go to http://localhost:5090/Pokemon/testing
 and then go to http://localhost:5090/swagger
 REMEMBER TO USE HTTP and NOT HTTPS
 
+Swagger page shows to location and arguments of all the endpoints.
+
+Project is based on a weather prediction template
+The new classes are:
+PokemonController
+PokeApiFetcher
+ShakespeareTranslator
+Dockerfile
+
 If container doesnt work for some reason you can start the native way  
 trust certificate  
 ```
